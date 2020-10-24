@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5548f5ed00.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
+    <title>Cash Flow Minimization</title>
+</head>
+
+<body>
+    <video autoplay muted loop id="myVideo">
+        <source src="bg.mp4" type="video/mp4">
+    </video>
+    <div class="container-fluid">
+        <div class="container-fluid">
+            <div class="row" id="heading">
+                <div class="col">
+                    <blockquote class="blockquote text-center">
+                        <h1>Cash Flow Minimization</h1>
+                    </blockquote>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col label">
+                    <blockquote class="blockquote text-center">
+                        <h2>Question</h2>
+                    </blockquote>
+                </div>
+                <div class="col label">
+                    <blockquote class="blockquote text-center">
+                        <h2>Solution</h2>
+                    </blockquote>
+                </div>
+            </div>
+            <div class="row" id="boxes">
+                <div class="col">
+                    <blockquote class="blockquote text-center">
+                        <div class="question">
+                            <h2 id="qtext">Press Generate button to Generate New Graph</h2>
+                            <div id="question"></div>
+                        </div>
+                    </blockquote>
+                </div>
+                <div class="col">
+                    <blockquote class="blockquote text-center">
+                        <div class="solution">
+                            <h2 id="stext">Solution : Press Solve Button</h2>
+                            <div id="solution"></div>
+                        </div>
+                    </blockquote>
+                </div>
+            </div>
+            <div class="row" id="buttons">
+                <div class="col" id="generate-button">
+                    <blockquote class="blockquote text-center">
+                        <button class="btn btn-danger btn-lg" id="generate">Generate</button>
+                    </blockquote>
+                </div>
+                <div class="col" id="solve-button">
+                    <blockquote class="blockquote text-center">
+                        <button class="btn btn-success btn-lg" id="solve">Solve</button>
+                    </blockquote>
+                </div>
+            </div>
+            <footer>
+                Done By Rahul Aggarwal(2K19/CO/302) And Rishabh Singhal(2K19/CO/317)
+            </footer>
+        </div>
+    </div>
+    <script type="module" src="heap.js"></script>
+    <script type="module" type="module" src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>
